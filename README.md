@@ -5,22 +5,22 @@ This project is a stock dashboard built using Flask and Dash, allowing users to 
 ## Technical Details
 The following are the technical details and requirements to run the project successfully:
 
-### Framework: 
+* ### Framework: 
 The application is built using Flask, a popular Python web framework, and Dash, a Python framework for building analytical web applications.
 
-### Database: 
+* ### Database: 
 PostgreSQL is used as the database system for storing stock data. The project includes a Docker image that starts a PostgreSQL service.
 
-### Docker: 
+* ### Docker: 
 The entire application is packaged into a Docker image, which includes the code to start the PostgreSQL service and perform necessary setup tasks.
 
-### Initialization: 
+* ### Initialization: 
 After the PostgreSQL service becomes up and running, a bash script is executed to create a username and database as specified in the local.env file. SQL scripts are then executed to create the necessary schema and insert some dummy data.
 
-### Real-Time Data: 
+* ### Real-Time Data: 
 The application supports real-time data updates by polling data into the PostgreSQL database. This allows users to view and analyze up-to-date stock information.
 
-### Dependencies: 
+* ### Dependencies: 
 All required Python packages are listed in the requirements.txt file. These packages need to be installed for the Flask application to run successfully.
 
 ## Getting Started
