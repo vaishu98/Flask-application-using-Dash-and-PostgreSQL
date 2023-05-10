@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel", "poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "take_home_project"
+version = "0.1.0"
+description = ""
+authors = ["Vaishnavi Chilakamarthi"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+run-app = "take_home_project:main"

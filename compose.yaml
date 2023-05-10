@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ./:/root/take_home_project
+    command: ["run-app"]
+    ports:
+      - "8888:8888"
+    env_file:
+      - ./local.env
+    depends_on:
+      - postgres
+    restart: always
+  postgres:
+    image: postgres:15.2
+    volumes:
+      - .:/docker-entrypoint-initdb.d
+    env_file:
+      - ./local.env
